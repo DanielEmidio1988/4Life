@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTRUTURA HEADER */
+header{
+    /* flex-grow: 1; */
+    background-color: #132235;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-logo{
+    flex-grow: 1;
+}
+
+.box-logo img{
+    height: 15vh;
+}
+
+.box-menu{
+    flex-grow: 3;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.box-menu span:hover{
+    border-bottom: 3px solid #5CB8B6;
+    cursor: pointer;
+}
+
+.box-login{
+    flex-grow: 2;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.box-login span{
+    color: #5CB8B6;
+    font-weight: bold;
+}
+
+.box-login span:hover{
+    border-bottom: 3px solid #5CB8B6;
+    cursor: pointer;
+}
+
+.box-login button{
+    background-color: #5CB8B6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 7vh;
+    width: 8vw;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.box-login button:hover{
+    cursor: pointer;
+    background-color: #79F2EA;
+}
+
+.box-login button:active{
+    cursor: pointer;
+    background-color: #4E9C9A;
+    color: black;
+}
+
+/* ESTRUTURA MAIN */
+.container-main{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+
+.container-main div{
+    height: 100vh;
+}
+
+.cont1-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7) url(./assets/pexels-rodnae-productions-4921514.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    
+    background-blend-mode: darken;
+    color: white;
+
+}
+
+.cont1-main h1{
+    font-size: 3.5vw;
+}
+
+.cont1-main h4{
+    margin-bottom: 15px;
+}
+
+.cont1-main input{
+    border-radius: 12px;
+    border: 1px solid #F7F7F7;
+    height: 1.7vw;
+    width: 20vw;
+    padding-left: 1vw;
+    margin-bottom: 8px;
+}
+
+.cont1-main button{
+    background-color: #5CB8B6;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    height: 4vh;
+    width: 6vw;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.cont1-main button:hover{
+    cursor: pointer;
+    background-color: #79F2EA;
+}
+
+.cont1-main button:active{
+    cursor: pointer;
+    background-color: #4E9C9A;
+    color: black;
+}
+
+cont2-main{
+    text-align: center;
+
+}
+
+.sub-cont-imoveis{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: lightgreen;
+}
+
+.box-imovel{
+    border: 1px solid black;
+    height: 40%;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    
+}
+
+
+/* ESTRUTURA FOOTER */
+footer{
+    flex-grow: 2;
+    background-color: #F7F7F7;
+    display: flex;
+    width: 100%;
+}
+
+.footer-introducao{
+    width: 40vw;
+    font-size: 0.9vw;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.footer-introducao img{
+    height: 6vh;
+    border-radius: 2;  
+}
+
+.footer-contatos{
+    flex-grow: 1;
+    font-size: 0.9vw;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer-menu{
+    flex-grow: 1;
+    font-size: 1vw;
+    padding-top: 20px;
+
+}
+
+.section-footer-redes-sociais{
+    padding-top: 30px;
+}
+
+.icon-social-media{
+    height: 1.5vw;
+    margin-left: 15px;
+}
+
