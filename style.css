@@ -64,7 +64,7 @@ header{
     height: 7vh;
     width: 8vw;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 2vw;
 }
 
 .box-login button:hover{
@@ -94,6 +94,7 @@ header{
     align-items: center;
     background: rgba(0, 0, 0, 0.7) url(./assets/pexels-rodnae-productions-4921514.jpg);
     background-position: top center;
+    background-repeat: no-repeat;
     background-size: 100% auto;
     
     background-blend-mode: darken;
@@ -168,17 +169,114 @@ header{
     /* justify-content: center;
     align-items: center;  */
 
-    
 }
 #box-imovel img{
     height: 15vw;
     padding: 2vw
 }
 
+.cont3-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* height: 120vh; */
+
+}
+
+.cont3-main h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 3.5vw;
+
+}
+
+.cont3-main button{
+    background-color: #5CB8B6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 7vh;
+    width: 16vw;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cont3-main button:hover{
+    cursor: pointer;
+    background-color: #79F2EA;
+}
+
+.cont3-main button:active{
+    cursor: pointer;
+    background-color: #4E9C9A;
+    color: black;
+}
+
+.sub-cont-dep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#box-dep {
+    border: 2px solid rgb(191, 191, 191);
+    border-radius: 12px;
+    height: 60vh;
+    width: 17vw;
+    padding: 1vw;
+}
+
+#box-dep img{
+    height: 10vh;
+    border-radius: 70%;
+}
+
+.cont4-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(./assets/undraw_Positive_attitude_re_wu7d.png);
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    background-position: center;
+    height: 100vh;
+    padding: 10vw
+}
+
+.cont4-main button{
+    background-color: #5CB8B6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 7vh;
+    width: 16vw;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cont4-main button:hover{
+    cursor: pointer;
+    background-color: #79F2EA;
+}
+
+.cont4-main button:active{
+    cursor: pointer;
+    background-color: #4E9C9A;
+    color: black;
+}
+
+
 
 /* ESTRUTURA FOOTER */
 footer{
-
     background-color: #F7F7F7;
     display: flex;
     width: 100%;
@@ -189,12 +287,10 @@ footer{
     font-size: 0.9vw;
     padding-top: 20px;
     padding-left: 20px;
-
 }
 
 .footer-introducao img{
     height: 6vh;
-    border-radius: 2;  
 }
 
 .footer-contatos{
@@ -208,7 +304,6 @@ footer{
     flex-grow: 1;
     font-size: 1vw;
     padding-top: 20px;
-
 }
 
 .section-footer-redes-sociais{
@@ -220,3 +315,24 @@ footer{
     margin-left: 15px;
 }
 
+
+@media screen and (min-device-width: 480px) and (max-device-width: 1000px){
+
+    .box-menu{
+        display: none;
+    }
+
+    .cont1-main{
+        height: 50vh;
+    }
+
+    .sub-cont-imoveis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    
+    }
+    
+}
