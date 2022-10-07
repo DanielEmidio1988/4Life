@@ -6,7 +6,6 @@
 }
 
 body{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -81,15 +80,12 @@ header{
 
 /* ESTRUTURA MAIN */
 .container-main{
-    flex-grow: 4;
+
     display: flex;
     flex-direction: column;
     /* background-color: yellow; */
 }
 
-.container-main div{
-    height: 100vh;
-}
 
 .cont1-main{
     display: flex;
@@ -102,7 +98,7 @@ header{
     
     background-blend-mode: darken;
     color: white;
-
+    height: 100vh;     /* Altura aplicada somente pela estetica da imagem de fundo. */
 }
 
 .cont1-main h1{
@@ -144,34 +140,45 @@ header{
     color: black;
 }
 
-cont2-main{
+.cont2-main{
     text-align: center;
+}
 
+.cont2-main h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .sub-cont-imoveis{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+
 }
 
-.box-imovel{
-    border: 1px solid black;
-    height: 40%;
-    width: 15vw;
+#box-imovel{
+    border: 2px solid rgb(191, 191, 191);
+    border-radius: 12px;
+    height: 45vh;
+    width: 17vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+    /* justify-content: center;
+    align-items: center;  */
 
     
+}
+#box-imovel img{
+    height: 15vw;
+    padding: 2vw
 }
 
 
 /* ESTRUTURA FOOTER */
 footer{
-    flex-grow: 2;
+
     background-color: #F7F7F7;
     display: flex;
     width: 100%;
