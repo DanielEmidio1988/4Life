@@ -16,7 +16,11 @@ header{
     background-color: #132235;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+}
+
+li{
+    list-style: none;
 }
 
 .box-logo{
@@ -41,6 +45,8 @@ header{
 
 .box-login{
     flex-grow: 2;
+    margin: 0 auto;
+    width: 40vw;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -56,23 +62,23 @@ header{
     cursor: pointer;
 }
 
-.box-login button{
+button{
     background-color: #5CB8B6;
     color: white;
     border: none;
-    border-radius: 8px;
-    height: 7vh;
-    width: 8vw;
+    border-radius: 12px;
+    height: 50px;
+    width: 80px;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 15px;
 }
 
-.box-login button:hover{
+button:hover{
     cursor: pointer;
     background-color: #79F2EA;
 }
 
-.box-login button:active{
+button:active{
     cursor: pointer;
     background-color: #4E9C9A;
     color: black;
@@ -80,10 +86,9 @@ header{
 
 /* ESTRUTURA MAIN */
 .container-main{
-
     display: flex;
     flex-direction: column;
-    /* background-color: yellow; */
+
 }
 
 
@@ -95,11 +100,10 @@ header{
     background: rgba(0, 0, 0, 0.7) url(./assets/pexels-rodnae-productions-4921514.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    
+    background-size: 100% auto;  
     background-blend-mode: darken;
     color: white;
-    height: 100vh;     /* Altura aplicada somente pela estetica da imagem de fundo. */
+    height: 70vh;     /* Altura aplicada somente pela estetica da imagem de fundo. */
 }
 
 .cont1-main h1{
@@ -108,46 +112,33 @@ header{
 
 .cont1-main h4{
     margin-bottom: 15px;
+    font-size: 2vw;
 }
 
 .cont1-main input{
     border-radius: 12px;
     border: 1px solid #F7F7F7;
-    height: 1.7vw;
-    width: 20vw;
+    height: 40px;
+    width: 300px;
     padding-left: 1vw;
     margin-bottom: 8px;
 }
 
-.cont1-main button{
-    background-color: #5CB8B6;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    height: 4vh;
-    width: 6vw;
-    font-weight: bold;
-    font-size: 2vh;
-}
-
-.cont1-main button:hover{
-    cursor: pointer;
-    background-color: #79F2EA;
-}
-
-.cont1-main button:active{
-    cursor: pointer;
-    background-color: #4E9C9A;
-    color: black;
-}
-
 .cont2-main{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 }
 
 .cont2-main h1{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    font-size: 30px;
+    border-top: 2px solid rgb(191, 191, 191);
+    padding-top: 10px;
+    width: 95%;
 }
 
 .sub-cont-imoveis{
@@ -156,23 +147,22 @@ header{
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
+    width: 80%;
+
 
 }
 
 #box-imovel{
-    border: 2px solid rgb(191, 191, 191);
-    border-radius: 12px;
-    height: 45vh;
-    width: 17vw;
+    border: 1px solid rgb(191, 191, 191);
+    height: 305px;
+    width: 207px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center;  */
-
+    margin-bottom: 30px;  
 }
+
 #box-imovel img{
-    height: 15vw;
-    padding: 2vw
+    margin-bottom: 10px; 
 }
 
 .cont3-main{
@@ -180,16 +170,16 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* height: 120vh; */
-
 }
 
 .cont3-main h1{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
-    font-size: 3.5vw;
-
+    font-size: 40px;
+    width: 95%;
+    border-top: 2px solid rgb(191, 191, 191);
+    padding-top: 10px;
 }
 
 .cont3-main button{
@@ -197,10 +187,10 @@ header{
     color: white;
     border: none;
     border-radius: 8px;
-    height: 7vh;
-    width: 16vw;
+    height: 50px;
+    width: 300px;
     font-weight: bold;
-    font-size: 2.5vh;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -222,18 +212,22 @@ header{
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: #132235;
+    width: 95%;
+    padding: 10px;
 }
 
 #box-dep {
     border: 2px solid rgb(191, 191, 191);
-    border-radius: 12px;
-    height: 60vh;
-    width: 17vw;
+    border-radius: 8px;
+    height: 450px;
+    width: 300px;
     padding: 1vw;
+    background-color: white;
 }
 
 #box-dep img{
-    height: 10vh;
+    height: 70px;
     border-radius: 70%;
 }
 
@@ -243,8 +237,8 @@ header{
     align-items: flex-end;
     background-image: url(./assets/undraw_Positive_attitude_re_wu7d.png);
     background-repeat: no-repeat;
-    background-size: 90vh;
-    background-position: center;
+    background-size: 70vh;
+    background-position:center;
     height: 100vh;
     padding: 10vw
 }
@@ -254,10 +248,10 @@ header{
     color: white;
     border: none;
     border-radius: 8px;
-    height: 7vh;
-    width: 16vw;
+    height: 50px;
+    width: 250px;
     font-weight: bold;
-    font-size: 2.5vh;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -279,30 +273,29 @@ header{
 footer{
     background-color: #F7F7F7;
     display: flex;
-    width: 100%;
 }
 
 .footer-introducao{
     width: 40vw;
-    font-size: 0.9vw;
+    font-size: 12px;
     padding-top: 20px;
     padding-left: 20px;
 }
 
 .footer-introducao img{
-    height: 6vh;
+    height: 28px;
 }
 
 .footer-contatos{
     flex-grow: 1;
-    font-size: 0.9vw;
+    font-size: 12px;
     padding-top: 20px;
     padding-left: 20px;
 }
 
 .footer-menu{
     flex-grow: 1;
-    font-size: 1vw;
+    font-size: 12px;
     padding-top: 20px;
 }
 
@@ -311,7 +304,7 @@ footer{
 }
 
 .icon-social-media{
-    height: 1.5vw;
+    height: 20px;
     margin-left: 15px;
 }
 
@@ -331,8 +324,71 @@ footer{
         justify-content: center;
         align-items: center;
         gap: 5px;
-        flex-wrap: wrap;
-    
+        flex-wrap: wrap; 
     }
+
+    .cont4-main{
+        background-size: 60vh;
+        background-position:left;
+    }   
+     
+}
+
+
+@media screen and (max-device-width: 480px){
+
+    .box-menu{
+        display: none;
+    }
+
+    .cont1-main{
+        height: 30vh;
+    }
+
+    .cont1-main h1{
+        font-size: 7vw;
+        margin-bottom: 8px;
+    }
+
+    .cont1-main h4{
+        display: none;
+    }
+
+    .sub-cont-imoveis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;   
+    }
+
+    .cont3-main button{
+
+        height: 40px;
+        width: 240px;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cont4-main{
+        font-size: 2vh;
+        background-size: 40vh;
+        background-position:left;
+    }
+
+    .cont4-main button{
+        height: 40px;
+        width: 200px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }   
     
 }
